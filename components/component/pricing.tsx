@@ -3,6 +3,7 @@
  * @see https://v0.dev/t/mHzj0LtJD3V
  */
 import Link from "next/link";
+import { JSX, SVGProps } from "react";
 
 export function Pricing() {
     return (
@@ -102,7 +103,9 @@ export function Pricing() {
     );
 }
 
-function CheckCircleIcon(props) {
+function CheckCircleIcon(
+    props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>
+) {
     return (
         <svg
             {...props}
