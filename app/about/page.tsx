@@ -1,9 +1,9 @@
-import { Home } from "@/components/component/home";
+import { About } from "@/components/component/about";
 
-export default function HomePage() {
+export default function PricingPage() {
     return (
         <main className="flex min-h-screen flex-col items-center justify-between p-24">
-            <Home />
+            <About />
         </main>
     );
 }
