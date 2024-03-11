@@ -31,3 +31,15 @@ body {
     text-wrap: balance;
   }
 }
+
+@media (min-width: 1920px) {
+  .container {
+    /* Full HD width */
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    /* Slim borders */
+    padding-right: 1rem;
+    /* Slim borders */
+  }
+}
