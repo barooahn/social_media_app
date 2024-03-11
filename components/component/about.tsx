@@ -159,40 +159,52 @@ export function About() {
                             </p>
                         </div>
                     </div>
-                    <div className="mx-auto grid max-w-sm items-start gap-4 sm:max-w-4xl md:gap-6">
-                        <div className="space-y-2">
-                            <Label className="text-base" htmlFor="message">
-                                Message
-                            </Label>
-                            <Textarea
-                                className="min-h-[150px] text-sm"
-                                id="message"
-                                placeholder="Enter your message"
-                            />
+                    <div className="flex flex-col items-center">
+                        <div className="w-full sm:w-full lg:w-1/2 xl:w-1/2 sm:px-4">
+                            <form className="space-y-6">
+                                <div className="space-y-2">
+                                    <Label
+                                        className="text-base"
+                                        htmlFor="message"
+                                    >
+                                        Message
+                                    </Label>
+                                    <Textarea
+                                        className="min-h-[150px] text-sm w-full"
+                                        id="message"
+                                        placeholder="Enter your message"
+                                    />
+                                </div>
+                                <div className="space-y-2">
+                                    <Label
+                                        className="text-base"
+                                        htmlFor="email"
+                                    >
+                                        Email
+                                    </Label>
+                                    <Input
+                                        className="text-sm w-full"
+                                        id="email"
+                                        placeholder="Email"
+                                        type="email"
+                                    />
+                                </div>
+                                <div className="space-y-2">
+                                    <Label className="text-base" htmlFor="name">
+                                        Name
+                                    </Label>
+                                    <Input
+                                        className="text-sm w-full"
+                                        id="name"
+                                        placeholder="Name"
+                                        type="text"
+                                    />
+                                </div>
+                                <Button className="mt-4 px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600">
+                                    Submit
+                                </Button>
+                            </form>
                         </div>
-                        <div className="space-y-2">
-                            <Label className="text-base" htmlFor="email">
-                                Email
-                            </Label>
-                            <Input
-                                className="text-sm"
-                                id="email"
-                                placeholder="Email"
-                            />
-                        </div>
-                        <div className="space-y-2">
-                            <Label className="text-base" htmlFor="name">
-                                Name
-                            </Label>
-                            <Input
-                                className="text-sm"
-                                id="name"
-                                placeholder="Name"
-                            />
-                        </div>
-                        <Button className="w-full max-w-[200px] justify-center text-sm">
-                            Submit
-                        </Button>
                     </div>
                 </div>
             </section>
