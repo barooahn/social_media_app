@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import { Header } from "./header";
 
 export function Home() {
@@ -114,6 +114,7 @@ export function Home() {
                             </div>
                             <div className="px-4 w-full lg:w-1/2">
                                 <Image
+                                    priority
                                     alt="Content Creation"
                                     src="/content-creation.png"
                                     layout="responsive"
