@@ -7,12 +7,10 @@ import { Textarea } from "@/components/ui/textarea";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import Image from "next/legacy/image";
-import { Header } from "../component/header";
 
 export function About() {
     return (
         <div className="flex flex-col min-h-[100dvh]">
-            <Header />
             <div className="bg-gray-50/90 py-6 w-full">
                 <div className="container flex items-center justify-center gap-4 px-4 text-center md:px-6">
                     <div className="space-y-3">

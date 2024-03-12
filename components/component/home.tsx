@@ -2,12 +2,10 @@ import Link from "next/link";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import Image from "next/legacy/image";
-import { Header } from "./header";
 
 export function Home() {
     return (
         <div className="flex flex-col min-h-screen w-screen">
-            <Header />
             <main className="flex-1">
                 <section
                     className="max-w-full py-6 md:py-12 lg:py-16 xl:py-24 bg-cover bg-center"
@@ -31,13 +29,13 @@ export function Home() {
                         <div className="flex flex-wrap justify-center gap-4">
                             <Link
                                 href="/get-started"
-                                className="inline-flex h-9 items-center justify-center rounded-md bg-gray-900 px-4 py-2 text-sm font-medium text-gray-50 shadow transition-colors hover:bg-gray-900/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:bg-gray-50 dark:text-gray-900 dark:hover:bg-gray-50/90 dark:focus-visible:ring-gray-300"
+                                className="px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600"
                             >
                                 <div>Get Started</div>
                             </Link>
                             <Link
                                 href="/contact"
-                                className="inline-flex h-9 items-center justify-center rounded-md border border-gray-200 bg-white px-4 py-2 text-sm font-medium shadow-sm transition-colors hover:bg-gray-100 hover:text-gray-900 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:border-gray-800 dark:bg-gray-950 dark:hover:bg-gray-800 dark:hover:text-gray-50 dark:focus-visible:ring-gray-300 dark:border-gray-800"
+                                className="inline-flex items-center justify-center rounded-md bg-gray-900 px-4 py-2 text-sm font-medium text-gray-50 shadow transition-colors hover:bg-gray-900/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:bg-gray-50 dark:text-gray-900 dark:hover:bg-gray-50/90 dark:focus-visible:ring-gray-300"
                             >
                                 <div>Contact Us</div>
                             </Link>
@@ -146,7 +144,12 @@ export function Home() {
                                     placeholder="Enter your email"
                                     type="email"
                                 />
-                                <Button type="submit">Sign Up</Button>
+                                <Button
+                                    type="submit"
+                                    className="px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600"
+                                >
+                                    Sign Up
+                                </Button>
                             </form>
                             <div className="text-sm text-gray-500 dark:text-gray-400">
                                 Subscribe to get exclusive updates and offers.
@@ -160,25 +163,7 @@ export function Home() {
                     </div>
                 </section>
             </main>
-            <footer className="py-6 w-full border-t">
-                <div className="container flex flex-col items-center px-4 md:flex-row md:justify-between md:px-6">
-                    <p className="text-sm text-gray-500 dark:text-gray-400">
-                        Buzz Creator © 2024 . All rights reserved.
-                    </p>
-                    <nav className="flex gap-4 mt-4 md:mt-0">
-                        <Link href="/terms-of-service">
-                            <div className="text-sm hover:underline">
-                                Terms of Service
-                            </div>
-                        </Link>
-                        <Link href="/privacy-policy">
-                            <div className="text-sm hover:underline">
-                                Privacy Policy
-                            </div>
-                        </Link>
-                    </nav>
-                </div>
-            </footer>
+
         </div>
     );
 }
