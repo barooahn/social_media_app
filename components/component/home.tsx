@@ -1,8 +1,3 @@
-/**
- * This updated code enhances the original by refining text for clarity and impact,
- * emphasizing calls to action, and ensuring the content is engaging and informative.
- * Perfect for a media company specializing in social media and video services.
- */
 import Link from "next/link";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
@@ -68,8 +63,8 @@ export function Home() {
                                     alt="Social Media Strategy"
                                     src="/social-media-strategy.png"
                                     layout="responsive"
-                                    width={550} // the original width of the image
-                                    height={310} // the original height of the image
+                                    width={550}
+                                    height={310}
                                     className="rounded-xl"
                                 />
                             </div>
@@ -152,14 +147,14 @@ export function Home() {
                                 />
                                 <Button type="submit">Sign Up</Button>
                             </form>
-                            <p className="text-sm text-gray-500 dark:text-gray-400">
+                            <div className="text-sm text-gray-500 dark:text-gray-400">
                                 Subscribe to get exclusive updates and offers.
                                 <Link href="/terms">
                                     <div className="underline">
                                         Terms & Conditions
                                     </div>
                                 </Link>
-                            </p>
+                            </div>
                         </div>
                     </div>
                 </section>
@@ -167,7 +162,7 @@ export function Home() {
             <footer className="py-6 w-full border-t">
                 <div className="container flex flex-col items-center px-4 md:flex-row md:justify-between md:px-6">
                     <p className="text-sm text-gray-500 dark:text-gray-400">
-                        © 2024 Your Company Name. All rights reserved.
+                        Buzz Creator © 2024 . All rights reserved.
                     </p>
                     <nav className="flex gap-4 mt-4 md:mt-0">
                         <Link href="/terms-of-service">
